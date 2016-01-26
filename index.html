@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Connect 4</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- JS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript" src="jquerymin.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="connect4.js"></script>
+
+
+
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div id="Title">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 10%">
+        <h4>Connect 4!</h4>
+        <p>Player 1: Black<br>Player 2: Orange</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="board">
+  <div class="container">
+    <div class="row">
+      <div class="seven columns offset-by-two">
+        <div class="boardBox">
+          <table>
+            <tr>
+              <td><div id="1" class="disc"></div></td>
+              <td><div id="2" class="disc"></div></td>
+              <td><div id="3" class="disc"></div></td>
+              <td><div id="4" class="disc"></div></td>
+              <td><div id="5" class="disc"></div></td>
+              <td><div id="6" class="disc"></div></td>
+              <td><div id="7" class="disc"></div></td>
+            </tr>
+            <tr>
+              <td><div id="8" class="disc"></div></td>
+              <td><div id="9" class="disc"></div></td>
+              <td><div id="10" class="disc"></div></td>
+              <td><div id="11" class="disc"></div></td>
+              <td><div id="12" class="disc"></div></td>
+              <td><div id="13" class="disc"></div></td>
+              <td><div id="14" class="disc"></div></td>
+            </tr>
+            <tr>
+              <td><div id="15" class="disc"></div></td>
+              <td><div id="16" class="disc"></div></td>
+              <td><div id="17" class="disc"></div></td>
+              <td><div id="18" class="disc"></div></td>
+              <td><div id="19" class="disc"></div></td>
+              <td><div id="20" class="disc"></div></td>
+              <td><div id="21" class="disc"></div></td>
+            </tr>
+            <tr>
+              <td><div id="22" class="disc"></div></td>
+              <td><div id="23" class="disc"></div></td>
+              <td><div id="24" class="disc"></div></td>
+              <td><div id="25" class="disc"></div></td>
+              <td><div id="26" class="disc"></div></td>
+              <td><div id="27" class="disc"></div></td>
+              <td><div id="28" class="disc"></div></td>
+            </tr>
+            <tr>
+              <td><div id="29" class="disc"></div></td>
+              <td><div id="30" class="disc"></div></td>
+              <td><div id="31" class="disc"></div></td>
+              <td><div id="32" class="disc"></div></td>
+              <td><div id="33" class="disc"></div></td>
+              <td><div id="34" class="disc"></div></td>
+              <td><div id="35" class="disc"></div></td>
+            </tr>
+            <tr>
+              <td><div id="36" class="disc"></div></td>
+              <td><div id="37" class="disc"></div></td>
+              <td><div id="38" class="disc"></div></td>
+              <td><div id="39" class="disc"></div></td>
+              <td><div id="40" class="disc"></div></td>
+              <td><div id="41" class="disc"></div></td>
+              <td><div id="42" class="disc"></div></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="two columns">
+        <a id="reset" class="button button-primary">Reset<a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="buttons">
+  <div class="container">
+    <div class="row">
+      <div class="one column offset-by-two">
+        <a id="b1" class="button button-primary">1</a>
+      </div>
+      <div class="one column">
+        <a id="b2" class="button button-primary">2</a>
+      </div>
+      <div class="one column">
+        <a id="b3" class="button button-primary">3</a>
+      </div>
+      <div class="one column">
+        <a id="b4" class="button button-primary">4</a>
+      </div>
+      <div class="one column">
+        <a id="b5" class="button button-primary">5</a>
+      </div>
+      <div class="one column">
+        <a id="b6" class="button button-primary">6</a>
+      </div>
+      <div class="one column">
+        <a id="b7" class="button button-primary">7</a>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="turn">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+      Turn: 
+        <p id="p1">Player One</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
